@@ -8,7 +8,12 @@ type Props = {
 }
 
 const LinkIcon = ({ className, to, children }: Props): JSX.Element => (
-  <Link className={`mx-2 ${className}`} to={to} target="_blank" rel="noopener">
+  <Link
+    className={`mx-2 ${className} hover:text-black transition-colors`}
+    to={to}
+    target="_blank"
+    rel="noopener"
+  >
     {children}
   </Link>
 )
