@@ -1,12 +1,21 @@
-import * as React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
+import React from 'react'
+import Accounts from '../components/common/accounts'
+import Seo from '../components/common/seo'
+import LinkButton from '../components/top/link-button'
 
-const IndexPage = (): JSX.Element => {
+const Index = (): JSX.Element => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1 className="text-red-500">test!</h1>
-    </main>
+    <div className="flex flex-col h-screen justify-center items-center">
+      <Seo />
+      <StaticImage src="../images/arrow2nd.png" alt="icon" width={200} />
+      <span className="mt-6 text-3xl text-natural-gray tracking-super">
+        arrow2nd
+      </span>
+      <Accounts className="mt-6" />
+      <LinkButton className="mt-6" />
+    </div>
   )
 }
 
-export default IndexPage
+export default Index
