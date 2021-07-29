@@ -8,11 +8,11 @@ type Props = {
 
 const Layout = ({ children }: Props): JSX.Element => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="mx-8">{children}</main>
+      <main className="flex-1 mx-8">{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 
