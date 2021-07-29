@@ -1,4 +1,4 @@
-import { SectionItem } from '../../types/section'
+import { SectionItem } from '../../types/section-item'
 
 export const AboutSection: SectionItem[] = [
   {

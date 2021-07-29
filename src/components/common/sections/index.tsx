@@ -1,4 +1,4 @@
-import { SectionItem } from '../../../types/section'
+import { SectionItem } from '../../../types/section-item'
 import React from 'react'
 import Section from './section'
 

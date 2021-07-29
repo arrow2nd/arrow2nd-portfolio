@@ -1,4 +1,4 @@
-import { PageLinks } from '../../data/links/page-links'
+import { PageLinks } from '../../data/common/page-links'
 import { Link } from 'gatsby'
 import React from 'react'
 
