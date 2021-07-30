@@ -1,21 +1,22 @@
-import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { IconName } from '@fortawesome/fontawesome-svg-core'
 import React from 'react'
 
 type Props = {
   className: string
-  to: string
-  children: React.ReactNode
+  icon: IconName
+  href: string
 }
 
-const LinkIcon = ({ className, to, children }: Props): JSX.Element => (
-  <Link
+const LinkIcon = ({ className, icon, href }: Props): JSX.Element => (
+  <a
     className={`mx-2 ${className} hover:text-black transition-colors`}
-    to={to}
+    href={href}
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
   >
-    {children}
-  </Link>
+    <FontAwesomeIcon icon={['fab', icon]} />
+  </a>
 )
 
 export default LinkIcon
