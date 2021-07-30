@@ -581,10 +581,15 @@ type WorksJson = Node & {
   readonly title: Maybe<Scalars['String']>;
   readonly desc: Maybe<Scalars['String']>;
   readonly category: Maybe<Scalars['String']>;
-  readonly images: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
+  readonly image: Maybe<WorksJsonImage>;
   readonly sections: Maybe<ReadonlyArray<Maybe<WorksJsonSections>>>;
   readonly links: Maybe<ReadonlyArray<Maybe<WorksJsonLinks>>>;
   readonly fields: Maybe<WorksJsonFields>;
+};
+
+type WorksJsonImage = {
+  readonly baseName: Maybe<Scalars['String']>;
+  readonly num: Maybe<Scalars['Int']>;
 };
 
 type WorksJsonSections = {
@@ -911,7 +916,7 @@ type Query_worksJsonArgs = {
   title: Maybe<StringQueryOperatorInput>;
   desc: Maybe<StringQueryOperatorInput>;
   category: Maybe<StringQueryOperatorInput>;
-  images: Maybe<StringQueryOperatorInput>;
+  image: Maybe<WorksJsonImageFilterInput>;
   sections: Maybe<WorksJsonSectionsFilterListInput>;
   links: Maybe<WorksJsonLinksFilterListInput>;
   fields: Maybe<WorksJsonFieldsFilterInput>;
@@ -1118,10 +1123,15 @@ type WorksJsonFilterInput = {
   readonly title: Maybe<StringQueryOperatorInput>;
   readonly desc: Maybe<StringQueryOperatorInput>;
   readonly category: Maybe<StringQueryOperatorInput>;
-  readonly images: Maybe<StringQueryOperatorInput>;
+  readonly image: Maybe<WorksJsonImageFilterInput>;
   readonly sections: Maybe<WorksJsonSectionsFilterListInput>;
   readonly links: Maybe<WorksJsonLinksFilterListInput>;
   readonly fields: Maybe<WorksJsonFieldsFilterInput>;
+};
+
+type WorksJsonImageFilterInput = {
+  readonly baseName: Maybe<StringQueryOperatorInput>;
+  readonly num: Maybe<IntQueryOperatorInput>;
 };
 
 type WorksJsonSectionsFilterListInput = {
@@ -1420,7 +1430,8 @@ type FileFieldsEnum =
   | 'childrenWorksJson.title'
   | 'childrenWorksJson.desc'
   | 'childrenWorksJson.category'
-  | 'childrenWorksJson.images'
+  | 'childrenWorksJson.image.baseName'
+  | 'childrenWorksJson.image.num'
   | 'childrenWorksJson.sections'
   | 'childrenWorksJson.sections.title'
   | 'childrenWorksJson.sections.text'
@@ -1470,7 +1481,8 @@ type FileFieldsEnum =
   | 'childWorksJson.title'
   | 'childWorksJson.desc'
   | 'childWorksJson.category'
-  | 'childWorksJson.images'
+  | 'childWorksJson.image.baseName'
+  | 'childWorksJson.image.num'
   | 'childWorksJson.sections'
   | 'childWorksJson.sections.title'
   | 'childWorksJson.sections.text'
@@ -2852,7 +2864,8 @@ type WorksJsonFieldsEnum =
   | 'title'
   | 'desc'
   | 'category'
-  | 'images'
+  | 'image.baseName'
+  | 'image.num'
   | 'sections'
   | 'sections.title'
   | 'sections.text'
@@ -3232,22 +3245,14 @@ type usersarrow2ndWorkspacereactarrow2ndPortfoliosrccomponentscommonseoTsx423253
       & { defaultTitle: SiteSiteMetadata['title'], defaultDescription: SiteSiteMetadata['description'], originUrl: SiteSiteMetadata['url'], defaultImage: SiteSiteMetadata['image'] }
     )> }> };
 
-type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<File, 'relativePath' | 'id'>
-        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
-      ) }> } };
-
 type WorkDetailQueryVariables = Exact<{
   slug: Scalars['String'];
 }>;
 
 
 type WorkDetailQuery = { readonly worksJson: Maybe<(
-    Pick<WorksJson, 'title' | 'desc' | 'category' | 'images'>
-    & { readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
+    Pick<WorksJson, 'title' | 'desc' | 'category'>
+    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
   )> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
@@ -3280,5 +3285,13 @@ type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
+
+type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'relativePath' | 'id'>
+        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> } };
 
 }

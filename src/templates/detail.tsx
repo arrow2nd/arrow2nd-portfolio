@@ -1,5 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import Seo from '../components/common/seo'
+import Carousel from '../components/detail/carousel'
 import Layout from '../components/layout'
 
 type Props = {
@@ -7,11 +9,15 @@ type Props = {
 }
 
 export default function Detail({ data }: Props): JSX.Element {
-  console.log(data)
-
   return (
     <Layout>
-      <span>{data.worksJson?.title}</span>
+      <Seo title={data.worksJson?.title} desc={data.worksJson?.desc} article />
+      <div className="mt-16">
+        <Carousel
+          baseName={data.worksJson?.image?.baseName}
+          imageNum={data.worksJson?.image?.num}
+        />
+      </div>
     </Layout>
   )
 }
@@ -22,7 +28,10 @@ export const query = graphql`
       title
       desc
       category
-      images
+      image {
+        baseName
+        num
+      }
       sections {
         text
         title

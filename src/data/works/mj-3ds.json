@@ -2,7 +2,10 @@
   "title": "まーじゃんのようなもの。ぷち",
   "desc": "3DSで遊べる 4人打ち麻雀ゲーム",
   "category": "game",
-  "images": ["mj-3ds-1.png", "mj-3ds-2.png"],
+  "image": {
+    "baseName": "mj-3ds",
+    "num": 4
+  },
   "sections": [
     {
       "title": "概要",
