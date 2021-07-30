@@ -1,5 +1,5 @@
-import { PageLinks } from '../../data/common/page-links'
 import { Link } from 'gatsby'
+import { PageLinks } from '../../data/links/pages'
 import React from 'react'
 
 type Props = {

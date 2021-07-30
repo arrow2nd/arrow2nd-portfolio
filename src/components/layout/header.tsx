@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import { PageLinks } from '../../data/common/page-links'
+import { PageLinks } from '../../data/links/pages'
 import React from 'react'
 
 const Header = (): JSX.Element => {

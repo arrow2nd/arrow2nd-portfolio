@@ -1,5 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import { AboutSection } from '../data/about/about-section'
+import { AboutSection } from '../data/sections/about'
 import React from 'react'
 import Sections from '../components/common/sections'
 import Seo from '../components/common/seo'

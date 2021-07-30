@@ -1,11 +1,11 @@
-import { NotFoundSection } from '../data/404/404-section'
+import { NotFoundSection } from '../data/sections/404'
 import React from 'react'
 import Sections from '../components/common/sections'
 import Seo from '../components/common/seo'
 import Title from '../components/common/title'
 import Layout from '../components/layout'
 
-const NotFoundPage = (): JSX.Element => (
+const NotFound = (): JSX.Element => (
   <Layout>
     <Seo title="404 Not Found" />
     <Title name="Opps!" />
@@ -13,4 +13,4 @@ const NotFoundPage = (): JSX.Element => (
   </Layout>
 )
 
-export default NotFoundPage
+export default NotFound
