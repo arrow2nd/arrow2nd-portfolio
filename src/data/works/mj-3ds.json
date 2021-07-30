@@ -1,0 +1,37 @@
+{
+  "title": "まーじゃんのようなもの。ぷち",
+  "desc": "3DSで遊べる 4人打ち麻雀ゲーム",
+  "category": "game",
+  "images": ["mj-3ds-1.png", "mj-3ds-2.png"],
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["プチコン3号（3DS）で遊べる 4人打ち麻雀ゲームです"]
+    },
+    {
+      "title": "紹介文",
+      "text": [
+        "（自称）プチコン初の4人打ち麻雀ゲーム。",
+        "ねこたちとゆったり麻雀を打つことができます。"
+      ]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "対局中でも確認できる役図鑑",
+        "ローカル役を多数採用（個別にON/OFFできます）"
+      ]
+    },
+    {
+      "title": "公開キー",
+      "text": ["4BL47E4V"]
+    }
+  ],
+  "links": [
+    {
+      "name": "プチコンまとめWiki",
+      "icon": "linkify",
+      "href": "http://wiki.hosiken.jp/petc3gou/?Toukou%2F4%BF%CD%C2%C7%A4%C1%CB%E3%BF%FD%A5%B2%A1%BC%A5%E0%A1%D8%A4%DE%A1%BC%A4%B8%A4%E3%A4%F3%A4%CE%A4%E8%A4%A6%A4%CA%A4%E2%A4%CE%A1%A3%A1%D9"
+    }
+  ]
+}
