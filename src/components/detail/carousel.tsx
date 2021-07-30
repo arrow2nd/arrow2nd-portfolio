@@ -45,7 +45,7 @@ export default function Carousel({
 
   return (
     <RRCarousel
-      className="mx-auto md:sw-8/12"
+      className="mx-auto md:w-8/12"
       autoPlay
       interval={1500}
       transitionTime={600}
