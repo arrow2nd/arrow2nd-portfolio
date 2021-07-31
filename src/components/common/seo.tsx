@@ -24,9 +24,9 @@ const Seo = ({
   article = false
 }: Props): JSX.Element => {
   const { pathname } = useLocation()
-  const { site } = useStaticQuery(
+  const { site } = useStaticQuery<GatsbyTypes.SiteInfoQuery>(
     graphql`
-      query {
+      query SiteInfo {
         site {
           siteMetadata {
             defaultTitle: title
@@ -41,6 +41,8 @@ const Seo = ({
     `
   )
 
+  if (!site?.siteMetadata) return <div />
+
   const {
     defaultTitle,
     titleTemplate,
@@ -51,11 +53,11 @@ const Seo = ({
   } = site.siteMetadata
 
   // URL末尾のスラッシュを削除
-  const siteUrl = originUrl.slice(0, -1)
+  const siteUrl = originUrl ? originUrl.slice(0, -1) : ''
 
   const seo = {
     title: title || defaultTitle,
-    ogpTitle: title ? titleTemplate.replace(/%s/, title) : defaultTitle,
+    ogpTitle: title ? titleTemplate?.replace(/%s/, title) : defaultTitle,
     description: desc || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`

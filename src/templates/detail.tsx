@@ -12,12 +12,14 @@ type Props = {
 }
 
 const Detail = ({ data }: Props): JSX.Element => {
-  const title = data.worksJson?.title || ''
-  const desc = data.worksJson?.desc || ''
-  const baseName = data.worksJson?.image?.baseName || ''
-  const imageNum = data.worksJson?.image?.num || 0
-  const sections = data.worksJson?.sections || []
-  const links = data.worksJson?.links || []
+  if (!data.worksJson) {
+    return <p>{`error : data.worksJson is undefined.`}</p>
+  }
+
+  const { title, desc, image, sections, links } = data.worksJson
+  if (!links) {
+    return <p>{`error : data.workJson.links is undefined.`}</p>
+  }
 
   const linkButtons = links.map((e) => (
     <LinkButton
@@ -31,9 +33,9 @@ const Detail = ({ data }: Props): JSX.Element => {
   return (
     <Layout>
       <Seo title={title} desc={desc} article />
-      <Carousel baseName={baseName} imageNum={imageNum} />
+      <Carousel baseName={image?.baseName} imageNum={image?.num} />
       <Title title={title} desc={desc} />
-      <Sections items={sections} />
+      <Sections items={sections ?? []} />
       <div className="mt-16 text-center">{linkButtons}</div>
     </Layout>
   )

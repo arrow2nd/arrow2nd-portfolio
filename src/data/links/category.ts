@@ -1,9 +1,9 @@
-type CategoryType = {
+type CategoryLinkType = {
   name: string
   to: string
 }
 
-export const Category: CategoryType[] = [
+export const CategoryLinks: CategoryLinkType[] = [
   {
     name: 'game',
     to: '/category/game'

@@ -1,13 +1,13 @@
 import { Link } from 'gatsby'
-import { Category } from '../../data/links/category'
+import { CategoryLinks } from '../../data/links/category'
 import React from 'react'
 
 type Props = {
-  current: string
+  current?: string
 }
 
-const TabButtons = ({ current }: Props): JSX.Element => {
-  const buttons = Category.map((e) => {
+const TabButtons = ({ current = '' }: Props): JSX.Element => {
+  const buttons = CategoryLinks.map((e) => {
     const className =
       e.name === current
         ? 'text-natural-white bg-natural-black'

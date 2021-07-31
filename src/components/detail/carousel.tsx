@@ -5,11 +5,11 @@ import { useImages, getGatsbyImage } from '../../hooks/useImages'
 import React from 'react'
 
 type Props = {
-  baseName: string
-  imageNum: number
+  baseName?: string
+  imageNum?: number
 }
 
-const Carousel = ({ baseName, imageNum }: Props): JSX.Element => {
+const Carousel = ({ baseName = '', imageNum = 0 }: Props): JSX.Element => {
   const allImages = useImages()
   const carouselImages: JSX.Element[] = []
 
