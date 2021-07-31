@@ -14,6 +14,13 @@
       ]
     },
     {
+      "title": "特徴",
+      "text": [
+        "“ほぼ”すべてのオモコロラジオが再生できます",
+        "自動再生・シャッフル再生機能つき"
+      ]
+    },
+    {
       "title": "使用技術",
       "text": ["Electron / React / TypeScript / webpack / Github Actions"]
     }
