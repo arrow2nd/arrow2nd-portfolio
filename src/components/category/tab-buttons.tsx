@@ -14,14 +14,13 @@ const TabButtons = ({ current = '' }: Props): JSX.Element => {
         : 'text-natural-black hover:text-natural-white'
 
     return (
-      <div
-        className={`m-2 md:m-1 px-4 md:px-5 py-0.5 md:py-1 inline-block ${className} hover:bg-natural-black rounded-full transition-colors`}
-        key={e.name}
-      >
-        <Link to={e.to}>
+      <Link to={e.to} key={e.name}>
+        <div
+          className={`m-2 md:m-1 px-4 md:px-5 py-0.5 md:py-1 inline-block ${className} hover:bg-natural-black rounded-full transition-colors`}
+        >
           <span className="tracking-widest">{e.name}</span>
-        </Link>
-      </div>
+        </div>
+      </Link>
     )
   })
 
