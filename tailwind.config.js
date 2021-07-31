@@ -1,5 +1,18 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  purge: {
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    safelist: [
+      'text-twitter',
+      'text-mastodon',
+      'text-github',
+      'bg-twitter',
+      'bg-mastodon',
+      'bg-github',
+      'bg-line',
+      'bg-link',
+      'bg-download'
+    ]
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
