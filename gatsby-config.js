@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: `%s | arrow2nd`,
     description: 'あろーがつくったものをまとめたサイト',
     author: 'arrow2nd',
-    url: '',
+    url: 'https://arrow2nd.github.io/',
     image: `/icons/icon-256x256.png`,
     twitterUsername: '@arrow_2nd'
   },
