@@ -14,7 +14,9 @@ module.exports = {
         arrow2nd: '#5B94FF',
         twitter: '#1DA1F2',
         mastodon: '#2B90D9',
-        github: '#333333'
+        github: '#333333',
+        line: '#06C755',
+        link: '#3B91C4'
       },
       letterSpacing: {
         super: '.25rem'
