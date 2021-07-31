@@ -1,0 +1,32 @@
+{
+  "title": "にゃんこだいせんせぇ",
+  "desc": "出てくる問題を『シュッ』と採点する脳トレゲーム",
+  "category": "game",
+  "image": {
+    "baseName": "nyanko",
+    "num": 4
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "問題とその答えが合っているかどうか、すばやく『シュッ』と採点する脳トレゲームです"
+      ]
+    },
+    {
+      "title": "コンテスト 🏆",
+      "text": ["第五回プチコン大喜利 TSUKUMO賞を頂きました！"]
+    },
+    {
+      "title": "公開キー",
+      "text": ["4NKEKN4XS"]
+    }
+  ],
+  "links": [
+    {
+      "name": "該当ツイートをみる",
+      "icon": "twitter",
+      "href": "https://twitter.com/arrow_2nd/status/1214409406026153984"
+    }
+  ]
+}

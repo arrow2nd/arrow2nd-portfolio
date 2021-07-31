@@ -1,0 +1,30 @@
+{
+  "title": "敬語っぽいねこのようなもの。",
+  "desc": "敬語成分多めな ねこのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "honorific-cat",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "もしかするとフォーマルな場でも使えるかもしれない ねこのスタンプです"
+      ]
+    },
+    {
+      "title": "ひとこと",
+      "text": [
+        "硬すぎず、砕けすぎない ちょうどいい塩梅に仕上がりました（たぶん）"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/14523908"
+    }
+  ]
+}

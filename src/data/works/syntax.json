@@ -1,0 +1,35 @@
+{
+  "title": "#syntax",
+  "desc": "パネルを並び替えて命令文をつくるパズル",
+  "category": "game",
+  "image": {
+    "baseName": "syntax",
+    "num": 3
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "文字のパネルを並び替えて、プチコンの命令をつくるパズルゲームです"
+      ]
+    },
+    {
+      "title": "ひとこと",
+      "text": [
+        "遊びながら命令が覚えれたらいいなと思って作ったものの",
+        "なんか違う感じになりました…"
+      ]
+    },
+    {
+      "title": "公開キー",
+      "text": ["4VKS8XDEF"]
+    }
+  ],
+  "links": [
+    {
+      "name": "該当ツイートをみる",
+      "icon": "twitter",
+      "href": "https://twitter.com/arrow_2nd/status/1297872774577262593"
+    }
+  ]
+}

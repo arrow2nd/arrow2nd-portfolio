@@ -1,0 +1,26 @@
+{
+  "title": "ねこのようなもの。",
+  "desc": "日常会話で使いやすい ねこのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "cat-1",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["割とつかえそうな語彙が揃った、スタンダードなねこのスタンプです"]
+    },
+    {
+      "title": "ひとこと",
+      "text": ["この頃はまだやせてた"]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/5233786"
+    }
+  ]
+}

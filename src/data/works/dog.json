@@ -1,0 +1,26 @@
+{
+  "title": "いぬだと思います。",
+  "desc": "たぶん、いぬのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "dog",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["いぬのような......なにかのスタンプです"]
+    },
+    {
+      "title": "ひとこと",
+      "text": ["🐶"]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/8527524"
+    }
+  ]
+}

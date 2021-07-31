@@ -1,0 +1,29 @@
+{
+  "title": "進捗とたたかうねこ。",
+  "desc": "進捗をやさしく尋ねる ねこのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "prog-cat",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["進捗を「聞く」「伝える」ことに特化した ねこのスタンプです"]
+    },
+    {
+      "title": "ひとこと",
+      "text": [
+        "やさしく進捗を聞いてほしかったので作りました。",
+        "進捗が出ないとつらいので...。"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/7224768"
+    }
+  ]
+}

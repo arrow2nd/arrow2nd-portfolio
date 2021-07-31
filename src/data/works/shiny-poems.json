@@ -1,0 +1,41 @@
+{
+  "title": "ShinyPoems",
+  "desc": "シャニマス衣装ポエム検索",
+  "category": "web",
+  "image": {
+    "baseName": "shiny-poems",
+    "num": 4
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "シャイニーカラーズの衣装説明（ポエム）の検索・共有ができるWebアプリです"
+      ]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "ポエムごとにOGP画像が動的に生成されるので、Twitter等でわかりやすく共有することができます"
+      ]
+    },
+    {
+      "title": "使用技術",
+      "text": [
+        "Next.js / TypeScript / Tailwind CSS / Cloudinary / im@sparql(SPARQL) / Vercel"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/shiny-poems"
+    },
+    {
+      "name": "サイトを見る",
+      "icon": "link",
+      "href": "https://shiny-poems.vercel.app/"
+    }
+  ]
+}

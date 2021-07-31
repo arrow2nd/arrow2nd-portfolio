@@ -1,0 +1,26 @@
+{
+  "title": "だいたいねこのようなもの",
+  "desc": "とても一般的な ねこのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "almost-cat",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["そこそこ口が悪い ねこのスタンプです"]
+    },
+    {
+      "title": "ひとこと",
+      "text": ["はじめてリジェクトされました！"]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/10319642"
+    }
+  ]
+}

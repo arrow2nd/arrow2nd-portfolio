@@ -1,0 +1,31 @@
+{
+  "title": "突然の死ジェネレーター",
+  "desc": "突然の死AAが作れるLINE Bot",
+  "category": "tool",
+  "image": {
+    "baseName": "totsuzen",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["LINEから ＞ 突然の死 ＜ を手軽に作ることができるLINE Botです"]
+    },
+    {
+      "title": "使用技術",
+      "text": ["Node.js / LINE Messaging API / Vercel"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/linebot-totsuzennoshi"
+    },
+    {
+      "name": "友だち登録",
+      "icon": "line",
+      "href": "https://lin.ee/2OnfDEwtE"
+    }
+  ]
+}

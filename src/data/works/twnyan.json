@@ -1,0 +1,37 @@
+{
+  "title": "twnyan",
+  "desc": "ターミナルで動くTwitterクライアント",
+  "category": "tool",
+  "image": {
+    "baseName": "twnyan",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["ターミナル上で動く、シンプルなTwitterクライアントです"]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "ツイートが読みやすいデザイン",
+        "疑似UserStream (ツイートが流れる) モード搭載"
+      ]
+    },
+    {
+      "title": "にゃーん",
+      "text": ["twnyan tw で「にゃーん」できます 🐱"]
+    },
+    {
+      "title": "使用技術",
+      "text": ["Go / Twitter API / CircleCI"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/twnyan"
+    }
+  ]
+}

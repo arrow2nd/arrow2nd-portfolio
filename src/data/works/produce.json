@@ -1,0 +1,42 @@
+{
+  "title": "プロデュースノート！",
+  "desc": "アイマスアイドルを検索できるLINE Bot",
+  "category": "tool",
+  "image": {
+    "baseName": "produce",
+    "num": 3
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "アイドルマスターシリーズに登場するアイドルのプロフィールを検索できるLINE Botです"
+      ]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "名前の一部や読み（ひらがな）からのうろ覚え検索に対応",
+        "誕生日からのアイドル検索"
+      ]
+    },
+    {
+      "title": "使用技術",
+      "text": [
+        "Node.js / LINE Messaging API / im@sparql(SPARQL) / Vercel / CircleCI"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/linebot-imas"
+    },
+    {
+      "name": "友だち登録",
+      "icon": "line",
+      "href": "https://lin.ee/gsEi1Ik"
+    }
+  ]
+}

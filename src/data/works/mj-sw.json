@@ -1,0 +1,44 @@
+{
+  "title": "まーじゃんのようなもの。for Switch",
+  "desc": "Switchで遊べる 4人打ち麻雀ゲーム",
+  "category": "game",
+  "image": {
+    "baseName": "mj-sw",
+    "num": 5
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "プチコン4（Switch）で遊べる「初心者にやさしい」4人打ち麻雀ゲームです"
+      ]
+    },
+    {
+      "title": "紹介文",
+      "text": [
+        "ねこたちとゆったりまーじゃん、始めませんか？",
+        "麻雀を始めたばかりの方でもあんしん。",
+        "充実(?)のサポート機能でだれでも手軽にお楽しみいただけます。"
+      ]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "捨て牌サポート機能「ねこのて」",
+        "ねこ（COM）の見た目・思考のカスタマイズ機能",
+        "ルール説明や役図鑑・簡単な用語辞典を内臓"
+      ]
+    },
+    {
+      "title": "公開キー",
+      "text": ["4NZS5D323"]
+    }
+  ],
+  "links": [
+    {
+      "name": "プチコンまとめWiki",
+      "icon": "link",
+      "href": "http://wiki.hosiken.jp/petc4/?Toukou%2F%A4%DE%A1%BC%A4%B8%A4%E3%A4%F3%A4%CE%A4%E8%A4%A6%A4%CA%A4%E2%A4%CE%A1%A3for%20Switch"
+    }
+  ]
+}

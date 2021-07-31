@@ -1,0 +1,26 @@
+{
+  "title": "もっと！ねこのようなもの。",
+  "desc": "よく使うワードを集めた ねこのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "more-cat",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["ちょっとふっくらしたねこの ちょっと使いやすいスタンプです"]
+    },
+    {
+      "title": "ひとこと",
+      "text": ["なんかねこ太った気がします"]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/12664864"
+    }
+  ]
+}

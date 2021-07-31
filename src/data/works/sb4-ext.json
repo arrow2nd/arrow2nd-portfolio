@@ -1,0 +1,42 @@
+{
+  "title": "sb4-extension",
+  "desc": "SmileBASIC 4のVSCode拡張",
+  "category": "tool",
+  "image": {
+    "baseName": "sb4ext",
+    "num": 3
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "SmileBASIC 4（プチコン4）をVSCodeでいい感じに書くための拡張機能です"
+      ]
+    },
+    {
+      "title": "主な機能",
+      "text": [
+        "シンタックスハイライト",
+        "入力補完",
+        "変数・関数宣言のホバー表示",
+        "コードスニペット"
+      ]
+    },
+    {
+      "title": "使用技術",
+      "text": ["Node.js / TypeScript"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/sb4-extension"
+    },
+    {
+      "name": "配布ページ",
+      "icon": "link",
+      "href": "https://marketplace.visualstudio.com/items?itemName=arrow2nd.sb4-extension"
+    }
+  ]
+}

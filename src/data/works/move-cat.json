@@ -1,0 +1,26 @@
+{
+  "title": "うごく！ねこのようなもの。",
+  "desc": "やわたかタッチの動くねこのスタンプ",
+  "category": "LINE sticker",
+  "image": {
+    "baseName": "move-cat",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["クレヨン風な、わちゃわちゃ動くねこのスタンプです"]
+    },
+    {
+      "title": "ひとこと",
+      "text": ["もぞもぞうごきます"]
+    }
+  ],
+  "links": [
+    {
+      "name": "LINE STORE",
+      "icon": "line",
+      "href": "https://store.line.me/stickershop/product/7982358"
+    }
+  ]
+}
