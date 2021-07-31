@@ -33,11 +33,13 @@ const Card = ({
         />
       </Link>
       <div className="ml-1">
-        <Link to={to}>
-          <span className="block mt-4 text-sm md:text-base hover:text-arrow2nd hover:underline">
-            {title}
-          </span>
-        </Link>
+        <div className="mt-4">
+          <Link to={to}>
+            <span className="text-sm md:text-base hover:text-arrow2nd hover:underline">
+              {title}
+            </span>
+          </Link>
+        </div>
         <span className="block text-xs md:text-sm text-natural-gray">
           {desc}
         </span>

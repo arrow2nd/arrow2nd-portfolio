@@ -13,7 +13,7 @@ const Section = ({ title = '', lines = [] }: Props): JSX.Element => {
   ))
 
   return (
-    <div className="mt-16 tracking-wide">
+    <div className="px-4 mt-16 tracking-wide">
       <h3 className="block text-xl text-natural-black">{title}</h3>
       <div className="mt-4 text-sm md:text-base">{sentence}</div>
     </div>
