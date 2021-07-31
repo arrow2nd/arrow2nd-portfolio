@@ -12,7 +12,8 @@ module.exports = {
         mastodon: '#2B90D9',
         github: '#333333',
         line: '#06C755',
-        link: '#3B91C4'
+        link: '#3B91C4',
+        download: '#01ADB9'
       },
       letterSpacing: {
         super: '.25rem'
