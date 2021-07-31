@@ -1,25 +1,19 @@
-import { IconName } from '@fortawesome/fontawesome-svg-core'
-
 type AccountLink = {
-  name: string
-  icon: IconName
+  iconName: string
   href: string
 }
 
 export const AccountLinks: AccountLink[] = [
   {
-    name: 'twitter',
-    icon: 'twitter',
+    iconName: 'twitter',
     href: 'https://twitter.com/arrow_2nd'
   },
   {
-    name: 'mastodon',
-    icon: 'mastodon',
+    iconName: 'mastodon',
     href: 'https://imastodon.net/@arrow2nd'
   },
   {
-    name: 'github',
-    icon: 'github',
+    iconName: 'github',
     href: 'https://github.com/arrow2nd'
   }
 ]

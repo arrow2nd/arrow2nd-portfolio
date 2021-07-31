@@ -5,18 +5,15 @@ import { useImages } from '../../hooks/useImages'
 import React from 'react'
 
 type Props = {
-  baseName?: string
-  imageNum?: number
+  baseName: string
+  imageNum: number
 }
 
-export default function Carousel({
-  baseName = '',
-  imageNum = 0
-}: Props): JSX.Element {
+const Carousel = ({ baseName, imageNum }: Props): JSX.Element => {
   const allImages = useImages()
-
   const carouselImages: JSX.Element[] = []
 
+  // カルーセルの画像要素を作成
   for (let idx = 0; idx <= imageNum; idx++) {
     const imageName = `${baseName}-${idx}.png`
 
@@ -47,7 +44,7 @@ export default function Carousel({
     <RRCarousel
       className="mx-auto md:w-8/12"
       autoPlay
-      interval={1500}
+      interval={4000}
       transitionTime={600}
       infiniteLoop
       showStatus={false}
@@ -57,3 +54,5 @@ export default function Carousel({
     </RRCarousel>
   )
 }
+
+export default Carousel

@@ -1,12 +1,12 @@
-import { SectionItem } from '../../../types/section-item'
 import React from 'react'
 
 type Props = {
-  item: SectionItem
+  title: string
+  lines: string[] | readonly GatsbyTypes.Maybe<string>[]
 }
 
-const Section = ({ item }: Props): JSX.Element => {
-  const sentence = item.text.map((line) => (
+const Section = ({ title = '', lines = [] }: Props): JSX.Element => {
+  const sentence = lines.map((line) => (
     <p className="text-natural-gray" key={line}>
       {line}
     </p>
@@ -14,8 +14,8 @@ const Section = ({ item }: Props): JSX.Element => {
 
   return (
     <div className="mt-16 tracking-wide">
-      <h3 className="block text-xl text-natural-black">{item.title}</h3>
-      <div className="mt-4">{sentence}</div>
+      <h3 className="block text-xl text-natural-black">{title}</h3>
+      <div className="mt-4 text-sm md:text-base">{sentence}</div>
     </div>
   )
 }

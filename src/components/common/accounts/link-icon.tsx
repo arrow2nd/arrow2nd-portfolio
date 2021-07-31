@@ -1,22 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconName } from '@fortawesome/fontawesome-svg-core'
+import { Icons } from '../../../data/icons'
 import React from 'react'
 
 type Props = {
-  className: string
-  icon: IconName
+  iconName: string
   href: string
 }
 
-const LinkIcon = ({ className, icon, href }: Props): JSX.Element => (
-  <a
-    className={`mx-2 ${className} hover:text-black transition-colors`}
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <FontAwesomeIcon icon={['fab', icon]} />
-  </a>
-)
+const LinkIcon = ({ iconName, href }: Props): JSX.Element => {
+  const icon = Icons[iconName] || ['fas', 'paw']
+
+  return (
+    <a
+      className={`mx-2 text-${iconName} hover:text-black transition-colors`}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={icon} />
+    </a>
+  )
+}
 
 export default LinkIcon
