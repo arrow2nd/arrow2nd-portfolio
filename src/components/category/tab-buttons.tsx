@@ -1,0 +1,31 @@
+import { Link } from 'gatsby'
+import { Category } from '../../data/links/category'
+import React from 'react'
+
+type Props = {
+  current: string
+}
+
+const TabButtons = ({ current }: Props): JSX.Element => {
+  const buttons = Category.map((e) => {
+    const className =
+      e.name === current
+        ? 'text-natural-white bg-natural-black'
+        : 'text-natural-black hover:text-natural-white'
+
+    return (
+      <div
+        className={`m-2 md:m-1 px-4 md:px-5 py-0.5 md:py-1 inline-block ${className} hover:bg-natural-black rounded-full transition-colors`}
+        key={e.name}
+      >
+        <Link to={e.to}>
+          <span className="tracking-widest">{e.name}</span>
+        </Link>
+      </div>
+    )
+  })
+
+  return <div className="mt-12 md:mt-16 text-center">{buttons}</div>
+}
+
+export default TabButtons

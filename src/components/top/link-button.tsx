@@ -17,7 +17,7 @@ const LinkButton = ({ className = '' }: Props): JSX.Element => {
 
   return (
     <div
-      className={`inline-block px-4 py-2 bg-natural-black rounded-full ${className}`}
+      className={`inline-block px-4 py-1 bg-natural-black rounded-full ${className}`}
     >
       {links}
     </div>
