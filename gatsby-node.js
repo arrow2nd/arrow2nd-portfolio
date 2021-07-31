@@ -1,46 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+'use strict'
 
-// slugを作成
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === 'WorksJson') {
-    const slug = createFilePath({ node, getNode, basePath: 'pages' })
-
-    createNodeField({
-      node,
-      name: 'slug',
-      value: slug
-    })
+require('ts-node').register({
+  compilerOptions: {
+    module: 'commonjs',
+    target: 'esnext'
   }
-}
+})
 
-// ページを生成
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const result = await graphql(`
-    query {
-      allWorksJson {
-        edges {
-          node {
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  result.data.allWorksJson.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/detail.tsx`),
-      context: {
-        slug: node.fields.slug
-      }
-    })
-  })
-}
+exports.onCreateNode = require('./gatsby-node/index').onCreateNode
+exports.createPages = require('./gatsby-node/index').createPages
