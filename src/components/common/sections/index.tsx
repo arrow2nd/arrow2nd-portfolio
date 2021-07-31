@@ -1,10 +1,10 @@
-import { SectionItem } from '../../../types/section-item'
+import { SectionType } from '../../../types/section'
 import React from 'react'
 import Section from './section'
 
 type Props = {
   items:
-    | SectionItem[]
+    | SectionType[]
     | readonly GatsbyTypes.Maybe<
         Pick<GatsbyTypes.WorksJsonSections, 'title' | 'text'>
       >[]

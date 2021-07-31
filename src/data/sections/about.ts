@@ -1,6 +1,6 @@
-import { SectionItem } from '../../types/section-item'
+import { SectionType } from '../../types/section'
 
-export const AboutSection: SectionItem[] = [
+export const AboutSection: SectionType[] = [
   {
     title: 'はじめまして、あろーです',
     text: [

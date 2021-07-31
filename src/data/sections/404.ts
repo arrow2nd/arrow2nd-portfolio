@@ -1,6 +1,6 @@
-import { SectionItem } from '../../types/section-item'
+import { SectionType } from '../../types/section'
 
-export const NotFoundSection: SectionItem[] = [
+export const NotFoundSection: SectionType[] = [
   {
     title: '404 Not Found',
     text: ['ページが見つかりませんでした 😿']

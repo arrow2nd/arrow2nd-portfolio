@@ -1,9 +1,9 @@
-type AccountLink = {
+type AccountLinkType = {
   iconName: string
   href: string
 }
 
-export const AccountLinks: AccountLink[] = [
+export const AccountLinks: AccountLinkType[] = [
   {
     iconName: 'twitter',
     href: 'https://twitter.com/arrow_2nd'

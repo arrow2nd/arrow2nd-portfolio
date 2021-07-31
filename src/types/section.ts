@@ -1,4 +1,4 @@
-export type SectionItem = {
+export type SectionType = {
   title: string
   text: string[]
 }
