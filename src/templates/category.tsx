@@ -46,7 +46,10 @@ export default Category
 
 export const query = graphql`
   query CategoryWorks($name: String!) {
-    allWorksJson(filter: { category: { eq: $name } }) {
+    allWorksJson(
+      filter: { category: { eq: $name } }
+      sort: { fields: title, order: DESC }
+    ) {
       edges {
         node {
           category
