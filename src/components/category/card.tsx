@@ -27,7 +27,7 @@ const Card = ({
     <div>
       <Link to={to}>
         <GatsbyImage
-          className="rounded-3xl shadow-md hover:opacity-75 transition-opacity"
+          className="border border-gray-200 rounded-3xl shadow-md hover:opacity-75 transition-opacity"
           image={image.data}
           alt={`${title}のスクリーンショット`}
         />

@@ -21,19 +21,19 @@ const Carousel = ({ baseName = '', imageNum = 0 }: Props): JSX.Element => {
     if (!image) continue
 
     carouselImages.push(
-      <div key={imageName}>
-        <GatsbyImage
-          image={image.data}
-          alt={`${idx + 1}枚目の画像`}
-          loading="eager"
-        />
-      </div>
+      <GatsbyImage
+        image={image.data}
+        alt={`${idx + 1}枚目の画像`}
+        loading="eager"
+        as={'div'}
+        key={imageName}
+      />
     )
   }
 
   return (
     <RRCarousel
-      className="mx-auto md:w-8/12"
+      className="mx-auto md:w-8/12 border border-gray-200"
       autoPlay
       interval={4000}
       transitionTime={600}
