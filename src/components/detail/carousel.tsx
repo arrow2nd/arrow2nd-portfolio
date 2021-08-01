@@ -33,7 +33,7 @@ const Carousel = ({ baseName = '', imageNum = 0 }: Props): JSX.Element => {
 
   return (
     <RRCarousel
-      className="mx-auto md:w-8/12 border border-gray-200"
+      className="mx-auto md:w-8/12 lg:w-7/12 border border-gray-200"
       autoPlay
       interval={4000}
       transitionTime={600}
