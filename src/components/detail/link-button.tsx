@@ -22,7 +22,7 @@ const LinkButton = ({ iconName, text, href }: Props): JSX.Element => {
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={icon} />
-        <span className="ml-1">{text}</span>
+        <span className="ml-1 inline-block">{text}</span>
       </a>
     </div>
   )

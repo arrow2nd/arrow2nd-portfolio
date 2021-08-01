@@ -5,7 +5,7 @@ import React from 'react'
 
 const Header = (): JSX.Element => {
   const linkItems = PageLinks.map((item) => (
-    <Link className="ml-8" to={item.to} key={item.name}>
+    <Link className="ml-8 inline-block" to={item.to} key={item.name}>
       <span className="text-base hover:text-arrow2nd hover:underline tracking-widest">
         {item.name}
       </span>
