@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby'
+import { useImages, getImageData } from '../hooks/useImages'
 import React from 'react'
 import Sections from '../components/common/sections'
 import Seo from '../components/common/seo'
@@ -21,6 +22,10 @@ const Detail = ({ data }: Props): JSX.Element => {
     return <p>{`error : data.workJson.links is undefined.`}</p>
   }
 
+  const allImages = useImages()
+  const result = getImageData(allImages, `${image?.baseName}-1.png`)
+  const seoImage = result ? result.src : ''
+
   const linkButtons = links.map((e) => (
     <LinkButton
       iconName={e?.icon || 'link'}
@@ -32,7 +37,7 @@ const Detail = ({ data }: Props): JSX.Element => {
 
   return (
     <Layout>
-      <Seo title={title} desc={desc} article />
+      <Seo title={title} desc={desc} image={seoImage} article />
       <Carousel baseName={image?.baseName} imageNum={image?.num} />
       <Title title={title} desc={desc} />
       <Sections items={sections ?? []} />

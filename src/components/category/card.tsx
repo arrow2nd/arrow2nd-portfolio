@@ -1,34 +1,34 @@
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import { useImages, getGatsbyImage } from '../../hooks/useImages'
+import { useImages, getImageData } from '../../hooks/useImages'
 import React from 'react'
 
 type Props = {
   title?: string
   desc?: string
-  image?: string
+  imageName?: string
   to?: string
 }
 
 const Card = ({
   title = '',
   desc = '',
-  image = '',
+  imageName = '',
   to = ''
 }: Props): JSX.Element => {
   const allImages = useImages()
 
-  const gatsbyImage = getGatsbyImage(allImages, image)
-  if (!gatsbyImage) {
-    return <p>{`error : '${image}' is undefined.`}</p>
+  const image = getImageData(allImages, imageName)
+  if (!image) {
+    return <p>{`error : '${imageName}' is not found.`}</p>
   }
 
   return (
     <div>
       <Link to={to}>
         <GatsbyImage
-          className="rounded-3xl shadow-md hover:opacity-75 transition-opacity"
-          image={gatsbyImage}
+          className="border border-gray-200 rounded-3xl shadow-md hover:opacity-75 transition-opacity"
+          image={image.data}
           alt={`${title}のスクリーンショット`}
         />
       </Link>

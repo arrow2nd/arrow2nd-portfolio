@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby'
-import { getImage, IGatsbyImageData } from 'gatsby-plugin-image'
+import { getImage, getSrc, IGatsbyImageData } from 'gatsby-plugin-image'
 
 type ImageType = readonly {
   readonly node: Pick<GatsbyTypes.File, 'relativePath' | 'id'> & {
@@ -29,19 +29,26 @@ export const useImages = (): ImageType => {
   return image.edges
 }
 
-export const getGatsbyImage = (
+type ImageDataType = { data: IGatsbyImageData; src: string }
+
+export const getImageData = (
   images: ImageType,
   imageName: string
-): IGatsbyImageData | undefined => {
-  // 画像の詳細を取得
-  const imageData = images.find((e) => e.node.relativePath.includes(imageName))
-  if (!imageData) return undefined
+): ImageDataType | undefined => {
+  // 画像名で絞り込む
+  const edge = images.find((e) => e.node.relativePath.includes(imageName))
+  if (!edge) return undefined
 
-  const gatsbyImageData = imageData.node.childImageSharp?.gatsbyImageData
+  const gatsbyImageData = edge.node.childImageSharp?.gatsbyImageData
   if (!gatsbyImageData) return undefined
 
-  const image = getImage(gatsbyImageData)
-  if (!image) undefined
+  // 画像データ
+  const data = getImage(gatsbyImageData)
+  if (!data) return undefined
 
-  return image
+  // 画像のパス
+  const src = getSrc(gatsbyImageData)
+  if (!src) return undefined
+
+  return { data, src }
 }
