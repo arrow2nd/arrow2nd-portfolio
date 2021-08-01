@@ -8,7 +8,12 @@ const Index = (): JSX.Element => {
   return (
     <div className="flex flex-col h-screen justify-center items-center">
       <Seo />
-      <StaticImage src="../images/arrow2nd.png" alt="icon" width={200} />
+      <StaticImage
+        className="border border-gray-200 rounded-full"
+        src="../images/arrow2nd.png"
+        alt="arrow2nd"
+        width={200}
+      />
       <span className="mt-6 text-3xl text-natural-gray tracking-super">
         arrow2nd
       </span>

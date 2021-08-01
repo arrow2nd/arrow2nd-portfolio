@@ -16,7 +16,7 @@ const Header = (): JSX.Element => {
     <nav className="flex flex-row px-8 md:px-10 py-6 w-full items-center">
       <Link to="/">
         <StaticImage
-          className="rounded-full"
+          className="border border-gray-200 rounded-full"
           src="../../images/arrow2nd.png"
           width={45}
           alt="icon"
