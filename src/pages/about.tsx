@@ -11,7 +11,12 @@ const About = (): JSX.Element => (
     <Seo title="about" />
     <Title name="about" />
     <div className="flex mt-16 justify-center">
-      <StaticImage src="../images/arrow2nd.png" alt="icon" width={200} />
+      <StaticImage
+        className="border border-gray-200 rounded-full"
+        src="../images/arrow2nd.png"
+        alt="icon"
+        width={200}
+      />
     </div>
     <Sections items={AboutSection} />
   </Layout>
