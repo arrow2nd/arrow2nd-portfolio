@@ -23,7 +23,7 @@ const Category = ({ data }: Props): JSX.Element => {
       <Card
         title={node.title}
         desc={node.desc}
-        image={`${node.image?.baseName}-1.png`}
+        imageName={`${node.image?.baseName}-1.png`}
         to={node.fields?.slug}
         key={node.title}
       />
