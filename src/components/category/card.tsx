@@ -34,13 +34,13 @@ const Card = ({
       </Link>
       <div className="ml-1">
         <div className="mt-4">
-          <Link to={to}>
-            <span className="text-base hover:text-arrow2nd hover:underline">
-              {title}
-            </span>
+          <Link className="inline-block" to={to}>
+            {title}
           </Link>
         </div>
-        <span className="block text-sm text-natural-gray">{desc}</span>
+        <span className="block text-sm text-natural-gray">
+          <p>{desc}</p>
+        </span>
       </div>
     </div>
   )
