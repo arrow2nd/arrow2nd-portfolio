@@ -38,10 +38,12 @@ const Detail = ({ data }: Props): JSX.Element => {
   return (
     <Layout>
       <Seo title={title} desc={desc} image={seoImage} article />
-      <Carousel baseName={image?.baseName} imageNum={image?.num} />
-      <Title title={title} desc={desc} />
-      <Sections items={sections ?? []} />
-      <div className="mt-16 text-center">{linkButtons}</div>
+      <div className="mx-auto max-w-3xl">
+        <Carousel baseName={image?.baseName} imageNum={image?.num} />
+        <Title title={title} desc={desc} />
+        <Sections items={sections ?? []} />
+        <div className="mt-16 text-center">{linkButtons}</div>
+      </div>
     </Layout>
   )
 }
