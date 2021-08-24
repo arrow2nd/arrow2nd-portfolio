@@ -9,15 +9,19 @@ export const AboutSection: SectionType[] = [
     ]
   },
   {
+    title: '開発環境',
+    text: ['Windows / macOS / Ubuntu']
+  },
+  {
     title: 'ちょっとわかる',
     text: ['C / JavaScript / Node.js / SmileBASIC']
   },
   {
     title: 'ほんのちょっとわかる',
-    text: ['HTML / CSS / TypeScript / React']
+    text: ['HTML / CSS / C++ / TypeScript / React']
   },
   {
     title: 'さわったことがある',
-    text: ['C++ / Java / Go']
+    text: ['Java / Go']
   }
 ]
