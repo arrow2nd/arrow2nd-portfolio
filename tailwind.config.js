@@ -26,7 +26,8 @@ module.exports = {
         github: '#333333',
         line: '#06C755',
         link: '#3B91C4',
-        download: '#01ADB9'
+        download: '#01ADB9',
+        googleplay: ' #000000'
       },
       letterSpacing: {
         super: '.25rem'

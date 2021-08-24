@@ -9,7 +9,17 @@ import {
   faTwitter,
   faMastodon,
   faGithub,
-  faLine
+  faLine,
+  faGooglePlay
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faDownload, faLink, faPaw, faTwitter, faMastodon, faGithub, faLine)
+library.add(
+  faDownload,
+  faLink,
+  faPaw,
+  faTwitter,
+  faMastodon,
+  faGithub,
+  faLine,
+  faGooglePlay
+)
