@@ -10,7 +10,8 @@ module.exports = {
       'bg-github',
       'bg-line',
       'bg-link',
-      'bg-download'
+      'bg-download',
+      'bg-googleplay'
     ]
   },
   darkMode: false, // or 'media' or 'class'
