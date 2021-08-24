@@ -10,5 +10,6 @@ export const Icons: IconType = {
   github: ['fab', 'github'],
   line: ['fab', 'line'],
   link: ['fas', 'link'],
-  download: ['fas', 'download']
+  download: ['fas', 'download'],
+  googleplay: ['fab', 'google-play']
 }
