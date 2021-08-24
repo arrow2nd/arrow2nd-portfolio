@@ -1,0 +1,35 @@
+{
+  "title": "ねこ、とぶ。",
+  "desc": "片手で遊べるシンプルでカジュアルなアクションゲーム",
+  "category": "game",
+  "image": {
+    "baseName": "neko-tobu",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "スマホを傾けてねこを動かして足場を踏み、飛んで飛んで飛びまくるゲームです。",
+        "ジャンプ台を連続で踏むとコンボが発生します。"
+      ]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "操作方法がわかりやすいので、誰でも \"ゆるく\" 遊ぶことができます。"
+      ]
+    },
+    {
+      "title": "開発言語",
+      "text": ["Java"]
+    }
+  ],
+  "links": [
+    {
+      "name": "Google Play",
+      "icon": "googleplay",
+      "href": "https://play.google.com/store/apps/details?id=jp.ac.kobedenshi.gamesoft.r_tanida01"
+    }
+  ]
+}
