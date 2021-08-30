@@ -1,0 +1,40 @@
+{
+  "title": "producer-budge-generator",
+  "desc": "担当アイドルのバッジをつくるやつです",
+  "category": "web",
+  "image": {
+    "baseName": "p-budge",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "担当アイドルを主張できるバッジをつくることができます",
+        "GitHub Profileに貼りたくなったので作りました"
+      ]
+    },
+    {
+      "title": "特徴",
+      "text": ["クリックするとアイドル名鑑が開くので、宣伝もできます...！"]
+    },
+    {
+      "title": "使用技術",
+      "text": [
+        "Next.js / Deno / TypeScript / Tailwind CSS / im@sparql(SPARQL) / shields.io / Vercel"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/producer-budge-generator"
+    },
+    {
+      "name": "サイトをみる",
+      "icon": "link",
+      "href": "https://producer-budge-generator.vercel.app/"
+    }
+  ]
+}
