@@ -22,10 +22,6 @@
       ]
     },
     {
-      "title": "データについて",
-      "text": ["プロフィール情報は im@sparql より取得しています"]
-    },
-    {
       "title": "使用技術",
       "text": [
         "Node.js / LINE Messaging API / im@sparql(SPARQL) / Vercel / CircleCI"

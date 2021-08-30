@@ -18,10 +18,10 @@ export const AboutSection: SectionType[] = [
   },
   {
     title: 'ほんのちょっとわかる',
-    text: ['HTML / CSS / C++ / TypeScript / React']
+    text: ['HTML / CSS / TypeScript / React']
   },
   {
     title: 'さわったことがある',
-    text: ['Java / Go']
+    text: ['C++ / Rust / Java / Go']
   }
 ]
