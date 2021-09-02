@@ -10,7 +10,7 @@ export const AboutSection: SectionType[] = [
   },
   {
     title: '開発環境',
-    text: ['Windows / macOS / Ubuntu']
+    text: ['Windows / macOS / Ubuntu(WSL2)']
   },
   {
     title: 'ちょっとわかる',
