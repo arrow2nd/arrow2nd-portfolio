@@ -4,7 +4,7 @@
   "category": "web",
   "image": {
     "baseName": "imas-palette",
-    "num": 3
+    "num": 4
   },
   "sections": [
     {
@@ -17,7 +17,8 @@
       "title": "特徴",
       "text": [
         "RGB / HSV / HEX形式のカラーコードを1クリックでコピー ",
-        "よく使うカラーを保存しておける「Keep」機能"
+        "よく使うカラーを保存しておける「Keep」機能",
+        "色味での絞込み検索に対応"
       ]
     },
     {
