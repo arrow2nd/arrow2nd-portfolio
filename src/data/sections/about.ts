@@ -21,7 +21,7 @@ export const AboutSection: SectionType[] = [
     text: ['HTML / CSS / TypeScript / React']
   },
   {
-    title: 'さわったことがある',
+    title: 'さわったことはある',
     text: ['C++ / Rust / Java / Go']
   }
 ]
