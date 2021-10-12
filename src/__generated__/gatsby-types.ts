@@ -3966,15 +3966,15 @@ type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readon
         & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
       ) }> } };
 
-type WorkDetailQueryVariables = Exact<{
-  slug: Scalars['String'];
+type CategoryWorksQueryVariables = Exact<{
+  name: Scalars['String'];
 }>;
 
 
-type WorkDetailQuery = { readonly worksJson: Maybe<(
-    Pick<WorksJson, 'title' | 'desc' | 'category'>
-    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
-  )> };
+type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<WorksJson, 'category' | 'title' | 'desc'>
+        & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
+      ) }> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -4007,14 +4007,14 @@ type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
 
-type CategoryWorksQueryVariables = Exact<{
-  name: Scalars['String'];
+type WorkDetailQueryVariables = Exact<{
+  slug: Scalars['String'];
 }>;
 
 
-type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<WorksJson, 'category' | 'title' | 'desc'>
-        & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
-      ) }> } };
+type WorkDetailQuery = { readonly worksJson: Maybe<(
+    Pick<WorksJson, 'title' | 'desc' | 'category'>
+    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
+  )> };
 
 }
