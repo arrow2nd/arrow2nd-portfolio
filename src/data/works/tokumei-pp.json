@@ -15,15 +15,15 @@
       "title": "特徴",
       "text": [
         "ほぼすべてのオモコロラジオが再生可能",
-        "各エピソードのタイトル表示に対応",
         "自動再生・シャッフル再生機能",
+        "各エピソードのタイトル表示",
         "新規エピソードの自動更新"
       ]
     },
     {
       "title": "使用技術",
       "text": [
-        "Electron / React / Deno / TypeScript / webpack / Tailwind CSS / GitHub Actions / GitHub Pages"
+        "Electron / React / Deno / TypeScript / webpack / Tailwind CSS / GitHub Actions / GitHub Pages / GitHub REST API"
       ]
     },
     {

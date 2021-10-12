@@ -9,16 +9,16 @@
   "sections": [
     {
       "title": "概要",
-      "text": ["あろーがつくったものをまとめた、ポートフォリオ的なサイトです"]
+      "text": ["つくったものをまとめた、ポートフォリオ的なサイトです"]
     },
     {
       "title": "ひとこと",
-      "text": ["こいつで4代目になります"]
+      "text": ["記事ページはJSONファイルから自動生成されるようになっています"]
     },
     {
       "title": "使用技術",
       "text": [
-        "Gatsby / TypeScript / Tailwind CSS / Github Actions / Github Pages"
+        "Gatsby / TypeScript / Tailwind CSS / GitHub Actions / GitHub Pages"
       ]
     },
     {

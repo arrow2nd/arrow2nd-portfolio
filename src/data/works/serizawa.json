@@ -17,18 +17,18 @@
       "title": "特徴",
       "text": [
         "最小限でシンプルなインターフェース",
-        "1クリックでスクリーンショットを撮影・クリップボードへコピー",
+        "1クリックでスクリーンショットを保存・クリップボードへコピー",
         "非アクティブ状態での音声再生"
       ]
     },
     {
       "title": "ひとこと",
-      "text": ["こいつを使えばシャニマスしながら作業ができます"]
+      "text": [""]
     },
     {
       "title": "使用技術",
       "text": [
-        "Electron / React / TypeScript / webpack / Tailwind CSS / Github Actions"
+        "Electron / React / TypeScript / webpack / Tailwind CSS / GitHub Actions / GitHub REST API"
       ]
     },
     {
