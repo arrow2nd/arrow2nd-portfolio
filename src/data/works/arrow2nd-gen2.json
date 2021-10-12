@@ -1,0 +1,30 @@
+{
+  "title": "arrow2nd.github.io (Gen 2)",
+  "desc": "ポートフォリオサイト（2代目）",
+  "category": "web",
+  "image": {
+    "baseName": "arrow2nd-gen2",
+    "num": 4
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["ポートフォリオ的なサイトです"]
+    },
+    {
+      "title": "使用技術",
+      "text": ["Gatsby / JavaScript / Semantic UI / GitHub Pages"]
+    },
+    {
+      "title": "制作期間",
+      "text": ["4日間（2021年3月）"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/arrow2nd.github.io-gen2"
+    }
+  ]
+}

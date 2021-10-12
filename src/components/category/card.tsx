@@ -1,7 +1,7 @@
+import React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { useImages, getImageData } from '../../hooks/useImages'
-import React from 'react'
 
 type Props = {
   title?: string

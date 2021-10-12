@@ -1,6 +1,6 @@
+import React from 'react'
 import { Link } from 'gatsby'
 import { PageLinks } from '../../data/links/pages'
-import React from 'react'
 
 type Props = {
   className?: string

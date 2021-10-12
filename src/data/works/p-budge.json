@@ -10,18 +10,20 @@
     {
       "title": "概要",
       "text": [
-        "担当アイドルを主張できるバッジをつくることができます",
+        "担当アイドルを主張するバッジをつくることができます",
         "GitHub Profileに貼りたくなったので作りました"
       ]
     },
     {
       "title": "特徴",
-      "text": ["クリックするとアイドル名鑑が開くので、宣伝もできます...！"]
+      "text": [
+        "バッジはアイドル名鑑へのリンクにもなっているので、宣伝にもなります…！"
+      ]
     },
     {
       "title": "使用技術",
       "text": [
-        "Next.js / Deno / TypeScript / Tailwind CSS / im@sparql(SPARQL) / shields.io / Vercel"
+        "Next.js / Deno / TypeScript / Tailwind CSS / im@sparql / shields.io / Vercel / GitHub Actions"
       ]
     },
     {

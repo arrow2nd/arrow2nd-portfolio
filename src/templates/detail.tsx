@@ -1,5 +1,3 @@
-import { graphql } from 'gatsby'
-import { useImages, getImageData } from '../hooks/useImages'
 import React from 'react'
 import Sections from '../components/common/sections'
 import Seo from '../components/common/seo'
@@ -7,6 +5,8 @@ import Carousel from '../components/detail/carousel'
 import LinkButton from '../components/detail/link-button'
 import Title from '../components/detail/title'
 import Layout from '../components/layout'
+import { graphql } from 'gatsby'
+import { useImages, getImageData } from '../hooks/useImages'
 
 type Props = {
   data: GatsbyTypes.WorkDetailQuery

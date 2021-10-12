@@ -1,0 +1,32 @@
+{
+  "title": "arrow2nd.github.io (Gen 1)",
+  "desc": "ポートフォリオサイト（1代目）",
+  "category": "web",
+  "image": {
+    "baseName": "arrow2nd-gen1",
+    "num": 3
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["初めてフレームワークを使って作った Webサイトです"]
+    },
+    {
+      "title": "使用技術",
+      "text": [
+        "Vue.js / JavaScript / bootstrap / Google Analytics / GitHub Pages"
+      ]
+    },
+    {
+      "title": "制作期間",
+      "text": ["1週間（2020年8月～9月）"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/arrow2nd.github.io-gen1"
+    }
+  ]
+}

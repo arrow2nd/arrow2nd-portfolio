@@ -1,7 +1,7 @@
+import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { PageLinks } from '../../data/links/pages'
-import React from 'react'
 
 const Header = (): JSX.Element => {
   const linkItems = PageLinks.map((item) => (

@@ -1,8 +1,9 @@
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import React from 'react'
 import { Carousel as RRCarousel } from 'react-responsive-carousel'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { useImages, getImageData } from '../../hooks/useImages'
-import React from 'react'
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 type Props = {
   baseName?: string

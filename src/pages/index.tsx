@@ -1,8 +1,8 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import Accounts from '../components/common/accounts'
 import Seo from '../components/common/seo'
 import LinkButton from '../components/top/link-button'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Index = (): JSX.Element => {
   return (

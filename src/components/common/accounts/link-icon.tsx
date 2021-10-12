@@ -1,6 +1,6 @@
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Icons } from '../../../data/icons'
-import React from 'react'
 
 type Props = {
   iconName: string
