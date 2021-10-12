@@ -1,10 +1,10 @@
-import { graphql } from 'gatsby'
 import React from 'react'
 import Seo from '../components/common/seo'
 import Title from '../components/common/title'
 import Layout from '../components/layout'
 import TabButtons from '../components/category/tab-buttons'
 import Card from '../components/category/card'
+import { graphql } from 'gatsby'
 
 type Props = {
   data: GatsbyTypes.CategoryWorksQuery

@@ -1,6 +1,6 @@
+import React from 'react'
 import { Link } from 'gatsby'
 import { CategoryLinks } from '../../data/links/category'
-import React from 'react'
 
 type Props = {
   current?: string

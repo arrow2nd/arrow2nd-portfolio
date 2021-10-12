@@ -1,6 +1,6 @@
-import { SectionType } from '../../../types/section'
 import React from 'react'
 import Section from './section'
+import { SectionType } from '../../../types/section'
 
 type Props = {
   items:

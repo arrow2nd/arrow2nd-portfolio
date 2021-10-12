@@ -1,10 +1,10 @@
-import { StaticImage } from 'gatsby-plugin-image'
-import { AboutSection } from '../data/sections/about'
 import React from 'react'
 import Sections from '../components/common/sections'
 import Seo from '../components/common/seo'
 import Title from '../components/common/title'
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
+import { AboutSection } from '../data/sections/about'
 
 const About = (): JSX.Element => (
   <Layout>
