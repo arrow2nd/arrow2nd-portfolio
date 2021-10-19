@@ -3958,14 +3958,6 @@ type SiteInfoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       & { defaultTitle: SiteSiteMetadata['title'], defaultDescription: SiteSiteMetadata['description'], originUrl: SiteSiteMetadata['url'], defaultImage: SiteSiteMetadata['image'] }
     )> }> };
 
-type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<File, 'relativePath' | 'id'>
-        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
-      ) }> } };
-
 type CategoryWorksQueryVariables = Exact<{
   name: Scalars['String'];
 }>;
@@ -3974,6 +3966,24 @@ type CategoryWorksQueryVariables = Exact<{
 type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArray<{ readonly node: (
         Pick<WorksJson, 'category' | 'title' | 'desc'>
         & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
+      ) }> } };
+
+type WorkDetailQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type WorkDetailQuery = { readonly worksJson: Maybe<(
+    Pick<WorksJson, 'title' | 'desc' | 'category'>
+    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
+  )> };
+
+type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'relativePath' | 'id'>
+        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
       ) }> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
@@ -4006,15 +4016,5 @@ type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type PagesQueryQuery = { readonly allSiteFunction: { readonly nodes: ReadonlyArray<Pick<SiteFunction, 'functionRoute'>> }, readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
-
-type WorkDetailQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type WorkDetailQuery = { readonly worksJson: Maybe<(
-    Pick<WorksJson, 'title' | 'desc' | 'category'>
-    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
-  )> };
 
 }
