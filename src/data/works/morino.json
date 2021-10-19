@@ -1,0 +1,44 @@
+{
+  "title": "morino",
+  "desc": "凛世さんのお誕生日をカウントダウンするサイト",
+  "category": "web",
+  "image": {
+    "baseName": "morino",
+    "num": 2
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": [
+        "アイドルマスターシャイニーカラーズの「杜野凛世」さんの誕生日までの秒数をカウントダウンするサイトです"
+      ]
+    },
+    {
+      "title": "きっかけ",
+      "text": [
+        "何かつくりたいな〜と思いながらお風呂に入っていたら思いついたので作りました",
+        "Deno Deploy を触ってみたかったというのもあります"
+      ]
+    },
+    {
+      "title": "使用技術",
+      "text": ["HTML / CSS / Deno / party.js / Deno Deploy"]
+    },
+    {
+      "title": "制作期間",
+      "text": ["約4時間（2021年10月）"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/morino"
+    },
+    {
+      "name": "サイトをみる",
+      "icon": "link",
+      "href": "https://morino.deno.dev/"
+    }
+  ]
+}
