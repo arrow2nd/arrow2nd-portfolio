@@ -1,6 +1,6 @@
 {
   "title": "producer-budge-generator",
-  "desc": "担当アイドルのバッジをつくるやつです",
+  "desc": "担当アイドルのバッジジェネレータ",
   "category": "web",
   "image": {
     "baseName": "p-budge",
