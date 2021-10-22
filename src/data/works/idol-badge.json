@@ -1,16 +1,16 @@
 {
-  "title": "producer-budge-generator",
-  "desc": "担当アイドルのバッジジェネレータ",
+  "title": "idol-badge-generator",
+  "desc": "アイマスアイドルのバッジジェネレータ",
   "category": "web",
   "image": {
-    "baseName": "p-budge",
+    "baseName": "idol-badge",
     "num": 2
   },
   "sections": [
     {
       "title": "概要",
       "text": [
-        "担当アイドルを主張するバッジをつくることができます",
+        "アイマスアイドルのバッジをつくることができます",
         "GitHub Profileに貼りたくなったので作りました"
       ]
     },
@@ -35,12 +35,12 @@
     {
       "name": "ソースをみる",
       "icon": "github",
-      "href": "https://github.com/arrow2nd/producer-budge-generator"
+      "href": "https://github.com/arrow2nd/idol-badge-generator"
     },
     {
       "name": "サイトをみる",
       "icon": "link",
-      "href": "https://producer-budge-generator.vercel.app/"
+      "href": "https://idol-badge-generator.vercel.app/"
     }
   ]
 }
