@@ -3547,14 +3547,6 @@ type WorksJsonSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
-type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<File, 'relativePath' | 'id'>
-        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
-      ) }> } };
-
 type SiteInfoQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -3562,16 +3554,6 @@ type SiteInfoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       Pick<SiteSiteMetadata, 'titleTemplate' | 'twitterUsername'>
       & { defaultTitle: SiteSiteMetadata['title'], defaultDescription: SiteSiteMetadata['description'], originUrl: SiteSiteMetadata['url'], defaultImage: SiteSiteMetadata['image'] }
     )> }> };
-
-type CategoryWorksQueryVariables = Exact<{
-  name: Scalars['String'];
-}>;
-
-
-type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<WorksJson, 'category' | 'title' | 'desc'>
-        & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
-      ) }> } };
 
 type WorkDetailQueryVariables = Exact<{
   slug: Scalars['String'];
@@ -3582,6 +3564,14 @@ type WorkDetailQuery = { readonly worksJson: Maybe<(
     Pick<WorksJson, 'title' | 'desc' | 'category'>
     & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
   )> };
+
+type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'relativePath' | 'id'>
+        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3608,6 +3598,16 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+
+type CategoryWorksQueryVariables = Exact<{
+  name: Scalars['String'];
+}>;
+
+
+type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<WorksJson, 'category' | 'title' | 'desc'>
+        & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
+      ) }> } };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
