@@ -73,7 +73,10 @@ const Seo = ({
       <meta property="og:title" content={seo.ogpTitle} />
       <meta property="og:description" content={seo.description} />
       <meta property="og:image" content={seo.image} />
-      <meta name="twitter:card" content="summary" />
+      <meta
+        name="twitter:card"
+        content={article ? 'summary_large_image' : 'summary'}
+      />
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={seo.ogpTitle} />
       <meta name="twitter:description" content={seo.description} />
