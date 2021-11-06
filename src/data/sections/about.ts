@@ -9,6 +9,10 @@ export const AboutSection: SectionType[] = [
     ]
   },
   {
+    title: '好きなアーティスト',
+    text: ['フレデリック / 平井堅 / 中村さんそ']
+  },
+  {
     title: '開発環境',
     text: ['Windows / macOS / Ubuntu (WSL2)']
   },
@@ -18,10 +22,10 @@ export const AboutSection: SectionType[] = [
   },
   {
     title: 'ほんのちょっとわかる',
-    text: ['HTML / CSS / TypeScript / React']
+    text: ['HTML / CSS / TypeScript / React / Go']
   },
   {
     title: 'さわったことはある',
-    text: ['C++ / Rust / Java / Go']
+    text: ['C++ / Rust / Java / Python']
   }
 ]
