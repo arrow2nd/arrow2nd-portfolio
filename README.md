@@ -4,6 +4,6 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 [![GitHub license](https://img.shields.io/github/license/arrow2nd/arrow2nd.github.io)](https://github.com/arrow2nd/arrow2nd.github.io/blob/main/LICENSE)
 
-つくったものをまとめたサイト 🍣
+つくったものをまとめたサイト 🍣 （Gen 3）
 
-> https://arrow2nd.github.io/
+> https://arrow2nd.com

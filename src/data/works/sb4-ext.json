@@ -1,6 +1,6 @@
 {
   "title": "sb4-extension",
-  "desc": "SmileBASIC 4のVSCode拡張",
+  "desc": "SmileBASIC4のVSCode拡張",
   "category": "tool",
   "image": {
     "baseName": "sb4ext",
@@ -10,7 +10,7 @@
     {
       "title": "概要",
       "text": [
-        "SmileBASIC 4（プチコン4）をVSCodeでいい感じに書くための拡張機能です"
+        "SmileBASIC4（プチコン4）をVSCodeでいい感じに書くための拡張機能です"
       ]
     },
     {

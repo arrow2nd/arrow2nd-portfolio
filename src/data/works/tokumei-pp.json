@@ -1,6 +1,6 @@
 {
   "title": "匿名Player++",
-  "desc": "オモコロ系 Webラジオプレイヤー",
+  "desc": "オモコロWebラジオプレイヤー",
   "category": "tool",
   "image": {
     "baseName": "tokumei-pp",
@@ -9,20 +9,21 @@
   "sections": [
     {
       "title": "概要",
-      "text": ["オモコロで配信中のWebラジオを再生する非公式のソフトウェア"]
+      "text": [
+        "オモコロで配信されているWebラジオを再生する 非公式のソフトウェアです"
+      ]
     },
     {
       "title": "特徴",
       "text": [
-        "ほぼすべてのオモコロラジオが再生可能",
-        "自動再生・シャッフル再生機能",
-        "新規エピソードの自動更新"
+        "ほぼすべてのオモコロラジオに対応",
+        "自動連続再生・シャッフル再生機能"
       ]
     },
     {
       "title": "使用技術",
       "text": [
-        "Electron / React / Deno / TypeScript / webpack / Tailwind CSS / GitHub Actions / GitHub Pages / GitHub REST API"
+        "Electron / React / TypeScript / webpack / Tailwind CSS / GitHub Actions / GitHub Pages / GitHub REST API"
       ]
     },
     {
