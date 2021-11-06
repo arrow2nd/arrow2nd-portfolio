@@ -3749,16 +3749,6 @@ type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readon
         & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
       ) }> } };
 
-type WorkDetailQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type WorkDetailQuery = { readonly worksJson: Maybe<(
-    Pick<WorksJson, 'title' | 'desc' | 'category'>
-    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
-  )> };
-
 type CategoryWorksQueryVariables = Exact<{
   name: Scalars['String'];
 }>;
@@ -3768,6 +3758,16 @@ type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArr
         Pick<WorksJson, 'category' | 'title' | 'desc'>
         & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
       ) }> } };
+
+type WorkDetailQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type WorkDetailQuery = { readonly worksJson: Maybe<(
+    Pick<WorksJson, 'title' | 'desc' | 'category'>
+    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
+  )> };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
