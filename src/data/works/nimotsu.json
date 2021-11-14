@@ -1,0 +1,37 @@
+{
+  "title": "nimotsu",
+  "desc": "荷物を追跡するCLIツール",
+  "category": "tool",
+  "image": {
+    "baseName": "nimotsu",
+    "num": 3
+  },
+  "sections": [
+    {
+      "title": "概要",
+      "text": ["荷物の配達状況を追跡するCLIツールです"]
+    },
+    {
+      "title": "特徴",
+      "text": [
+        "日本の主要配送業者に対応",
+        "追跡する荷物をリストに保存して、一括追跡もできます"
+      ]
+    },
+    {
+      "title": "使用技術",
+      "text": ["Go / GitHub Actions"]
+    },
+    {
+      "title": "制作期間",
+      "text": ["約2週間（2021年10月〜11月）"]
+    }
+  ],
+  "links": [
+    {
+      "name": "ソースをみる",
+      "icon": "github",
+      "href": "https://github.com/arrow2nd/nimotsu"
+    }
+  ]
+}
