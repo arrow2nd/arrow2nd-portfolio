@@ -3737,22 +3737,6 @@ type StaticImageSortInput = {
   readonly order: Maybe<ReadonlyArray<Maybe<SortOrderEnum>>>;
 };
 
-type SiteInfoQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type SiteInfoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
-      Pick<SiteSiteMetadata, 'titleTemplate' | 'twitterUsername'>
-      & { defaultTitle: SiteSiteMetadata['title'], defaultDescription: SiteSiteMetadata['description'], originUrl: SiteSiteMetadata['url'], defaultImage: SiteSiteMetadata['image'] }
-    )> }> };
-
-type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<File, 'relativePath' | 'id'>
-        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
-      ) }> } };
-
 type CategoryWorksQueryVariables = Exact<{
   name: Scalars['String'];
 }>;
@@ -3798,6 +3782,22 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+
+type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'relativePath' | 'id'>
+        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> } };
+
+type SiteInfoQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type SiteInfoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
+      Pick<SiteSiteMetadata, 'titleTemplate' | 'twitterUsername'>
+      & { defaultTitle: SiteSiteMetadata['title'], defaultDescription: SiteSiteMetadata['description'], originUrl: SiteSiteMetadata['url'], defaultImage: SiteSiteMetadata['image'] }
+    )> }> };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
