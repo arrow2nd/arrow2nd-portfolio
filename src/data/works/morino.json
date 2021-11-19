@@ -4,7 +4,7 @@
   "category": "web",
   "image": {
     "baseName": "morino",
-    "num": 2
+    "num": 3
   },
   "sections": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "title": "使用技術",
-      "text": ["HTML / CSS / Deno / party.js / Deno Deploy"]
+      "text": ["HTML / CSS / Deno / party.js / Deno Deploy / Cloudinary"]
     },
     {
       "title": "制作期間",
