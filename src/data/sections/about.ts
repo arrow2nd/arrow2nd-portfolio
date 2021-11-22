@@ -9,6 +9,10 @@ export const AboutSection: SectionType[] = [
     ]
   },
   {
+    title: '好きなもの',
+    text: ['🐶 / 🐱 / アイドルマスター']
+  },
+  {
     title: '好きなアーティスト',
     text: ['フレデリック / 平井堅 / 中村さんそ']
   },
@@ -18,14 +22,14 @@ export const AboutSection: SectionType[] = [
   },
   {
     title: 'ちょっとわかる',
-    text: ['C / JavaScript / Node.js / SmileBASIC']
+    text: ['C / JavaScript / Deno / Node.js / SmileBASIC']
   },
   {
     title: 'ほんのちょっとわかる',
-    text: ['HTML / CSS / TypeScript / React / Go']
+    text: ['HTML / CSS / MySQL / TypeScript / React / Go']
   },
   {
     title: 'さわったことはある',
-    text: ['C++ / Rust / Java / Python']
+    text: ['C++ / Rust / Java / Python / PHP']
   }
 ]
