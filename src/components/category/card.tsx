@@ -27,20 +27,16 @@ const Card = ({
     <div>
       <Link to={to}>
         <GatsbyImage
-          className="border border-gray-200 z-0 rounded-3xl shadow-md hover:opacity-75 transition-opacity"
+          className="border border-gray-200 z-0 rounded-3xl shadow-md filter hover:brightness-75 transition-all"
           image={image.data}
           alt={`${title}のスクリーンショット`}
         />
       </Link>
-      <div className="ml-1">
-        <div className="mt-4">
-          <Link className="inline-block" to={to}>
-            {title}
-          </Link>
-        </div>
-        <span className="block text-sm text-natural-gray">
-          <p>{desc}</p>
-        </span>
+      <div className="mt-4 ml-1">
+        <Link className="inline-block" to={to}>
+          <p className="hover:text-arrow2nd transition-colors">{title}</p>
+        </Link>
+        <p className="block text-sm text-natural-gray">{desc}</p>
       </div>
     </div>
   )

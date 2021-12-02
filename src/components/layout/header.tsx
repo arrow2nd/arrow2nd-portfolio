@@ -6,7 +6,7 @@ import { PageLinks } from '../../data/links/pages'
 const Header = (): JSX.Element => {
   const linkItems = PageLinks.map((item) => (
     <Link className="ml-8 inline-block" to={item.to} key={item.name}>
-      <span className="text-base hover:text-arrow2nd hover:underline tracking-widest">
+      <span className="text-base tracking-widest hover:text-arrow2nd transition-colors">
         {item.name}
       </span>
     </Link>
@@ -20,6 +20,7 @@ const Header = (): JSX.Element => {
           src="../../images/arrow2nd.png"
           alt="icon"
           width={45}
+          loading="eager"
           placeholder="blurred"
         />
       </Link>
