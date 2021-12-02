@@ -18,24 +18,22 @@ const Category = ({ data }: Props): JSX.Element => {
   const { edges } = data.allWorksJson
   const category = edges[0]?.node.category || 'error'
 
-  const cards = edges.map(({ node }) => {
-    return (
-      <Card
-        title={node.title}
-        desc={node.desc}
-        imageName={`${node.image?.baseName}-1.png`}
-        to={node.fields?.slug}
-        key={node.title}
-      />
-    )
-  })
+  const cards = edges.map(({ node }) => (
+    <Card
+      title={node.title}
+      desc={node.desc}
+      imageName={`${node.image?.baseName}-1.png`}
+      to={node.fields?.slug}
+      key={node.title}
+    />
+  ))
 
   return (
     <Layout>
       <Seo title={category} />
       <Title name="works" />
       <TabButtons current={category} />
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 md:mt-16">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 md:mt-16 transition-anim">
         {cards}
       </div>
     </Layout>

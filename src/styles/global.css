@@ -4,8 +4,8 @@
 
 @layer utilities {
   .transition-anim {
-    animation: fadeIn 1s ease-out 0s 1 normal;
-    -webkit-animation: fadeIn 0.5s ease 0s 1 normal;
+    animation: fadeIn 1s ease-in-out 0s 1 normal;
+    -webkit-animation: fadeIn 1s ease-in-out 0s 1 normal;
   }
 }
 

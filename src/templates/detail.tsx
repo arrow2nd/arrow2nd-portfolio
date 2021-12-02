@@ -38,7 +38,7 @@ const Detail = ({ data }: Props): JSX.Element => {
   return (
     <Layout>
       <Seo title={title} desc={desc} image={seoImage} article />
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl transition-anim">
         <Carousel baseName={image?.baseName} imageNum={image?.num} />
         <Title title={title} desc={desc} />
         <Sections items={sections ?? []} />

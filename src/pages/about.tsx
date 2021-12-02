@@ -11,7 +11,7 @@ const About = (): JSX.Element => (
     <Seo title="about" />
     <div className="mx-auto max-w-3xl">
       <Title name="about" />
-      <div className="flex mt-16 justify-center">
+      <div className="flex mt-16 justify-center transition-anim">
         <StaticImage
           className="border border-gray-200 rounded-full"
           src="../images/arrow2nd.png"
