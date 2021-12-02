@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .transition-anim {
+    animation: fadeIn 1s ease-out 0s 1 normal;
+    -webkit-animation: fadeIn 0.5s ease 0s 1 normal;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   background-color: #faf8f7;
