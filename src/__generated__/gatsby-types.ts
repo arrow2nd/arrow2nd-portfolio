@@ -261,8 +261,6 @@ type Site = Node & {
   readonly siteMetadata: Maybe<SiteSiteMetadata>;
   readonly port: Maybe<Scalars['Int']>;
   readonly host: Maybe<Scalars['String']>;
-  readonly polyfill: Maybe<Scalars['Boolean']>;
-  readonly pathPrefix: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly parent: Maybe<Node>;
   readonly children: ReadonlyArray<Node>;
@@ -883,8 +881,6 @@ type Query_siteArgs = {
   siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
   port: Maybe<IntQueryOperatorInput>;
   host: Maybe<StringQueryOperatorInput>;
-  polyfill: Maybe<BooleanQueryOperatorInput>;
-  pathPrefix: Maybe<StringQueryOperatorInput>;
   id: Maybe<StringQueryOperatorInput>;
   parent: Maybe<NodeFilterInput>;
   children: Maybe<NodeFilterListInput>;
@@ -2094,8 +2090,6 @@ type SiteFieldsEnum =
   | 'siteMetadata.twitterUsername'
   | 'port'
   | 'host'
-  | 'polyfill'
-  | 'pathPrefix'
   | 'id'
   | 'parent.id'
   | 'parent.parent.id'
@@ -2229,8 +2223,6 @@ type SiteFilterInput = {
   readonly siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
   readonly port: Maybe<IntQueryOperatorInput>;
   readonly host: Maybe<StringQueryOperatorInput>;
-  readonly polyfill: Maybe<BooleanQueryOperatorInput>;
-  readonly pathPrefix: Maybe<StringQueryOperatorInput>;
   readonly id: Maybe<StringQueryOperatorInput>;
   readonly parent: Maybe<NodeFilterInput>;
   readonly children: Maybe<NodeFilterListInput>;
@@ -3759,6 +3751,16 @@ type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArr
         & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
       ) }> } };
 
+type WorkDetailQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+type WorkDetailQuery = { readonly worksJson: Maybe<(
+    Pick<WorksJson, 'title' | 'desc' | 'category'>
+    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
+  )> };
+
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
 type GatsbyImageSharpFixed_tracedSVGFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
@@ -3784,16 +3786,6 @@ type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 't
 type GatsbyImageSharpFluid_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_noBase64Fragment = Pick<ImageSharpFluid, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type WorkDetailQueryVariables = Exact<{
-  slug: Scalars['String'];
-}>;
-
-
-type WorkDetailQuery = { readonly worksJson: Maybe<(
-    Pick<WorksJson, 'title' | 'desc' | 'category'>
-    & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName' | 'num'>>, readonly sections: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonSections, 'text' | 'title'>>>>, readonly links: Maybe<ReadonlyArray<Maybe<Pick<WorksJsonLinks, 'href' | 'icon' | 'name'>>>> }
-  )> };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 

@@ -18,7 +18,7 @@ export const useImages = (): ImageType => {
             relativePath
             id
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(placeholder: DOMINANT_COLOR)
             }
           }
         }

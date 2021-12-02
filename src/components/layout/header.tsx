@@ -18,8 +18,9 @@ const Header = (): JSX.Element => {
         <StaticImage
           className="border border-gray-200 rounded-full"
           src="../../images/arrow2nd.png"
-          width={45}
           alt="icon"
+          width={45}
+          placeholder="blurred"
         />
       </Link>
       <div className="ml-auto">{linkItems}</div>
