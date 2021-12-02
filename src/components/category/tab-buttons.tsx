@@ -16,7 +16,7 @@ const TabButtons = ({ current = '' }: Props): JSX.Element => {
     return (
       <Link to={e.to} key={e.name}>
         <div
-          className={`m-2 md:m-1 px-4 md:px-5 py-0.5 md:py-1 inline-block ${className} hover:bg-natural-black rounded-full transition-colors`}
+          className={`m-2 md:m-1 px-4 md:px-5 py-0.5 md:py-1 inline-block hover:bg-natural-black rounded-full transition-colors ${className}`}
         >
           <span className="inline-block tracking-widest">{e.name}</span>
         </div>
