@@ -3342,6 +3342,14 @@ type SiteInfoQuery = { readonly site: Maybe<{ readonly siteMetadata: Maybe<(
       & { defaultTitle: SiteSiteMetadata['title'], defaultDescription: SiteSiteMetadata['description'], originUrl: SiteSiteMetadata['url'], defaultImage: SiteSiteMetadata['image'] }
     )> }> };
 
+type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<File, 'relativePath' | 'id'>
+        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
+      ) }> } };
+
 type CategoryWorksQueryVariables = Exact<{
   name: Scalars['String'];
 }>;
@@ -3350,14 +3358,6 @@ type CategoryWorksQueryVariables = Exact<{
 type CategoryWorksQuery = { readonly allWorksJson: { readonly edges: ReadonlyArray<{ readonly node: (
         Pick<WorksJson, 'category' | 'title' | 'desc'>
         & { readonly image: Maybe<Pick<WorksJsonImage, 'baseName'>>, readonly fields: Maybe<Pick<WorksJsonFields, 'slug'>> }
-      ) }> } };
-
-type AllImagesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type AllImagesQuery = { readonly image: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<File, 'relativePath' | 'id'>
-        & { readonly childImageSharp: Maybe<Pick<ImageSharp, 'gatsbyImageData'>> }
       ) }> } };
 
 type WorkDetailQueryVariables = Exact<{
